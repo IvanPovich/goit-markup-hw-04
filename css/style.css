@@ -374,12 +374,15 @@ img {
 .item_team {
   width: 40px;
   height: 40px;
+  transition: background-color var(--transition-color);
 }
 
 .list_team_networks {
   display: flex;
   justify-content: center;
   gap: 24px;
+
+  margin-top: 8px;
 }
 
 .link_team_network {
@@ -413,12 +416,41 @@ img {
 .portfolio-item {
   height: 420px;
   width: var(--grid_3);
+
+  transition: box-shadow var(--transition-color);
 }
 
 .portfolio-item:hover {
   box-shadow:
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  0px 1px 6px rgba(46, 47, 66, 0.08),
+   0px 1px 1px rgba(46, 47, 66, 0.16),
+   0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-pints {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-points-list {
+  position: absolute;
+  top: 0;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 40px 32px;
+
+  background-color: var(--iris-color);
+  height: 100%;
+  width: 100%;
+
+  transform: translateY(100%);
+  transition: transform var(--transition-color);
+}
+
+.portfolio-item:hover > .portfolio-points-list {
+  transform: translateY(0%);
 }
 
 .portfolio-info {
