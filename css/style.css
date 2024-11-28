@@ -16,7 +16,7 @@
   --grid_4: calc((100% - 72px) / 4);
   --grid_3: calc((100% - 48px) / 3);
 
-  --transition-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-set: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* #region NORMALIZE */
@@ -207,7 +207,7 @@ img {
   font-weight: 500;
   padding: 24px 0;
   display: flex;
-  transition: color var(--transition-color);
+  transition: color var(--transition-set);
 }
 
 .nav-link.is-active {
@@ -249,7 +249,7 @@ img {
   font-style: normal;
   font-weight: 400;
   color: var(--slate-color);
-  transition: color var(--transition-color);
+  transition: color var(--transition-set);
 }
 
 .contact-link:hover {
@@ -302,7 +302,7 @@ img {
   height: 56px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px #00000026;
-  transition: background-color var(--transition-color);
+  transition: background-color var(--transition-set);
 
   cursor: pointer;
 }
@@ -376,7 +376,7 @@ img {
 .item_team {
   width: 40px;
   height: 40px;
-  transition: background-color var(--transition-color);
+  transition: background-color var(--transition-set);
 }
 
 .list_team_networks {
@@ -396,7 +396,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: background-color var(--transition-color);
+  transition: background-color var(--transition-set);
 }
 
 .link_team_network:hover,
@@ -420,7 +420,7 @@ img {
   height: 420px;
   width: var(--grid_3);
 
-  transition: box-shadow var(--transition-color);
+  transition: box-shadow var(--transition-set);
 }
 
 .portfolio-item:hover {
@@ -450,7 +450,7 @@ img {
   width: 100%;
 
   transform: translateY(100%);
-  transition: transform var(--transition-color);
+  transition: transform var(--transition-set);
 }
 
 .portfolio-item:hover .slider-card {
@@ -509,7 +509,7 @@ img {
 .element_footer {
   width: 40px;
   height: 40px;
-  transition: background-color var(--transition-color);
+  transition: background-color var(--transition-set);
 }
 
 .link_footer_icon {
@@ -522,6 +522,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color var(--transition-set);
 }
 
 .link_footer_icon:hover,
